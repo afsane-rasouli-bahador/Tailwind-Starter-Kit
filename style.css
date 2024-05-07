@@ -1,0 +1,287 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+img, video{
+    width: 100%;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.d-flex{
+    display: flex;
+}
+.d-grid{
+    display: grid;
+}
+div#container header{
+    background-color: white;
+    padding: 0.5rem;
+}
+div#container section.header-manager{
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 5px gray;
+    position: fixed;
+    z-index: 1000;
+}
+header section.header-title{
+    color: rgb(55, 55, 103);
+    font-weight: 600;
+}
+main section.slider div.slider-title p{
+    font-size: 2rem;
+    color: rgb(76, 76, 83);
+}
+main section.slider p.slider-content{
+    color: rgb(76, 76, 83);
+    text-align: justify;
+}
+main section.slider div.slider-btns{
+    display: flex;
+    gap: 0.5rem;
+}
+main section.slider div.slider-btn-1 ,main section.slider div.slider-btn-2{
+    padding: 1rem;
+    border-radius: 0.3rem;
+    background-color: antiquewhite;
+    box-shadow: 1px 1px 1px rgb(164, 164, 164);
+}
+main section.slider div.slider-btn-1:hover ,main section.slider div.slider-btn-2:hover{
+    box-shadow: 1px 1px 5px rgb(164, 164, 164);
+}
+main section.slider div.slider-btn-1 {
+    background-color: #c93a76;
+}
+main section.slider div.slider-btn-2 {
+    background-color: rgb(65, 74, 91);
+}
+main section.slider div.slider-btn-1 a,main section.slider div.slider-btn-2 a{
+    color: white;
+}
+
+main section.main-manager{
+    padding: 1rem;
+    background-color: rgb(227, 227, 227);
+}
+
+main section.about-us section.img-description{
+    border-radius: 0.5rem;
+    background-color: #c93a76;
+}
+main section.about-us div.about-us-img img{
+    border-radius: 0.5rem;
+}
+main section.about-us div.about-us-description{
+    color: white;
+    padding: 1.5rem;
+}
+main section.about-us div.about-us-title{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+main section.about-us article{
+    text-align: justify;
+    font-weight: 300;
+    line-height: 25px;
+}
+main section.about-us section.img-description{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(1,1fr); 
+}
+main div.about-us-circle{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 1px 1px 3px gray;
+}
+main div.about-us-circle img{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+main p.about-us-title{
+    font-size: 1.5rem;
+}
+main p.about-us-content{
+    color: rgb(123, 123, 123);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+main section.css-item-box1{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto auto auto auto;
+    row-gap: 0.1rem;
+}
+main div.box-tag{
+    background-color: white;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.1rem;
+}
+main div.link-view{
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+main div.link-view a{
+    color: #183579;
+    text-decoration: underline;
+}
+main section.css-items-images{
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.1fr 1fr 0.5fr 0.1fr 0.4fr;
+    grid-template-columns: 0.3fr repeat(3,1fr) 0.5fr  2fr;
+}
+main section.css-items-images img{
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px gray;
+}
+main section.css-items-images div.css-img1{
+    position: relative;
+    grid-row: 1/3;
+    grid-column: 3/5;
+}
+main section.css-items-images div.css-img2{
+    grid-row: 4/6;
+    grid-column: 1/4;
+}
+main section.css-items-images div.css-img3{
+    position: relative;
+    grid-row: 2/5;
+    grid-column: 6/7;
+}
+main section.css-items-images div.css-img4{
+    grid-row: 7/8;
+    grid-column: 2/7;
+}
+main section.css-items-images .pos-img1{
+    width: 70%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px gray;
+}
+main section.css-items-images .pos-img2{
+    width: 70%;
+    position: absolute;
+    top: 90%;
+    right: 60%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px gray;
+}
+main div.javascript-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    color: white;
+    margin: 0.5rem 0;
+    box-shadow: 1px 1px 2px gray;
+}
+main div.javascript-box p{
+    color: rgb(255, 255, 255);
+}
+main section.javascript-boxes div.js-box1{
+    background-color: rgb(0, 156, 217);
+}
+main section.javascript-boxes div.js-box2{
+    background-color: rgb(217, 130, 0);
+}
+main section.javascript-boxes div.js-box3{
+    background-color: rgb(122, 182, 0);
+}
+main section.javascript-boxes div.js-box4{
+    background-color: rgb(217, 18, 0);
+}
+
+
+
+
+
+@media screen and (max-width:470px) {
+    div#container header{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    header section.information{
+        display: none;
+    }
+    header section.information-mobile{
+        width: 50px;
+    }
+    main section.slider{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: end;
+    }
+    main section.slider section.slider-img{
+        width: 70vw;
+        height: 40vh;
+        background: url("images/ill_header_3.png") no-repeat;
+        background-size: 100%;
+    }
+    main section.slider-manager{
+        width: 90%;
+        margin: auto;
+    }
+    main section.about-us{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 1rem;
+    }
+    main section.css-items{
+        width: 90%;
+        margin: auto;
+        padding-top: 4rem;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 4rem;
+    }
+    main section.javascript-items{
+        width: 90%;
+        margin: auto;
+        padding-top: 4rem;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 4rem;
+    }
+    main section.complex{
+        width: 90%;
+        margin: auto;
+    }
+}
