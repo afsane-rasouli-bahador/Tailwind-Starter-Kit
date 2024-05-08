@@ -39,40 +39,40 @@ header section.header-title{
     color: rgb(55, 55, 103);
     font-weight: 600;
 }
-main section.slider div.slider-title p{
+main div.slider-title p, footer div.slider-title p{
     font-size: 2rem;
     color: rgb(76, 76, 83);
 }
-main section.slider p.slider-content{
+main p.slider-content, footer p.slider-content{
     color: rgb(76, 76, 83);
     text-align: justify;
 }
-main section.slider div.slider-btns{
+main div.slider-btns{
     display: flex;
     gap: 0.5rem;
 }
-main section.slider div.slider-btn-1 ,main section.slider div.slider-btn-2{
+main  div.slider-btn-1 ,main div.slider-btn-2{
     padding: 1rem;
     border-radius: 0.3rem;
     background-color: antiquewhite;
     box-shadow: 1px 1px 1px rgb(164, 164, 164);
 }
-main section.slider div.slider-btn-1:hover ,main section.slider div.slider-btn-2:hover{
+main div.slider-btn-1:hover ,main div.slider-btn-2:hover{
     box-shadow: 1px 1px 5px rgb(164, 164, 164);
 }
-main section.slider div.slider-btn-1 {
+main div.slider-btn-1 {
     background-color: #c93a76;
 }
-main section.slider div.slider-btn-2 {
+main div.slider-btn-2 {
     background-color: rgb(65, 74, 91);
 }
-main section.slider div.slider-btn-1 a,main section.slider div.slider-btn-2 a{
+main div.slider-btn-1 a,main div.slider-btn-2 a{
     color: white;
 }
 
 main section.main-manager{
-    padding: 1rem;
     background-color: rgb(227, 227, 227);
+    padding-top: 2rem;
 }
 
 main section.about-us section.img-description{
@@ -100,7 +100,7 @@ main section.about-us section.img-description{
     grid-template-rows: auto auto;
     grid-template-columns: repeat(1,1fr); 
 }
-main div.about-us-circle{
+main div.about-us-circle, footer div.about-us-circle{
     width: 50px;
     height: 50px;
     background-color: rgb(255, 255, 255);
@@ -108,7 +108,7 @@ main div.about-us-circle{
     position: relative;
     box-shadow: 1px 1px 3px gray;
 }
-main div.about-us-circle img{
+main div.about-us-circle img, footer div.about-us-circle img{
     width: 50%;
     height: 50%;
     position: absolute;
@@ -127,10 +127,9 @@ main p.about-us-content{
     letter-spacing: 1px;
 }
 main section.css-item-box1{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: auto auto auto auto;
-    row-gap: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 main div.box-tag{
     background-color: white;
@@ -218,7 +217,114 @@ main section.javascript-boxes div.js-box3{
 main section.javascript-boxes div.js-box4{
     background-color: rgb(217, 18, 0);
 }
+main section.complex section.complex-boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+main section.complex div.complex-items{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+main section.complex div.complex-items div.about-us-circle{
+    width: 20px;
+    height: 20px;
+}
+main section.complex section.complex-img-design{
+    transform: scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg);
+}
+main section.complex section.complex-img-design img{
+    box-shadow: 1px 1px 5px gray;
+}
+main section.example-pages{
+    padding: 10rem 0;
+    text-align: center;
+}
+main section.example-pages p{
+    text-align: center;
+}
+main section.github{
+    width: 100vw;
+    background: url('images/thumb-1920-985381.jpg') no-repeat;
+    background-size: cover;
+    padding: 4rem 0;
+}
+main section.github-manager img{
+    border-radius: 15px;
+    transition: transform 0.5s;
+}
+main section.github-manager img:hover{
+    transform: translateY(-15px)
+}
+main section.github-manager div.github-title{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1.5rem 0;
+    text-shadow: 1px 1px 1px gray;
+}
+main section.github-description div.slider-title p{
+    color: white;
+}
+main section.github-description p.slider-content{
+    color: rgb(188, 188, 188);
+}
+main section.github-description div.slider-btn-1{
+    background-color: #24314f;
+    box-shadow: 1px 1px 1px black;
+}
+main section.starter-kit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+}
+main section.starter-kit p.emojy{
+    font-size: 3rem;
+    margin: 1rem;
+    padding: 0;
+}
+footer div.about-us-circle{
+    width: 40px;
+    height: 40px;
+}
+footer div.about-us-circle img{
+    width: 70%;
+    height: 70%;
+}
+footer{
+    padding: 10rem 1rem 2rem;
+    background-color: rgb(206, 206, 206);
+}
+footer section.circle-manager{
+    display: flex;
+    gap: 10px;
+    padding: 0.5rem;
+}
+footer section.footer-right div.footer-link-title a{
+    color: rgb(47, 47, 47);
+    font-weight: 600;
+}
+footer section.link-left, footer section.link-right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
+footer section.footer-right div.footer-link a{
+    color: rgb(101, 101, 101);
+}
+footer section.footer-right div.footer-link a:hover{
+    color: rgb(74, 74, 74);
+    text-decoration: underline;
+}
+footer section.copyright{
+    border-top: 1px solid gray;
+}
 
 
 
@@ -237,15 +343,13 @@ main section.javascript-boxes div.js-box4{
         width: 50px;
     }
     main section.slider{
-        width: 100vw;
-        height: 100vh;
         display: grid;
         grid-template-rows: auto auto;
         grid-template-columns: repeat(1,1fr);
-        justify-items: end;
+        justify-items: start;
     }
     main section.slider section.slider-img{
-        width: 70vw;
+        width: 100vw;
         height: 40vh;
         background: url("images/ill_header_3.png") no-repeat;
         background-size: 100%;
@@ -253,6 +357,7 @@ main section.javascript-boxes div.js-box4{
     main section.slider-manager{
         width: 90%;
         margin: auto;
+        padding: 2rem 0;
     }
     main section.about-us{
         width: 90%;
@@ -283,5 +388,319 @@ main section.javascript-boxes div.js-box4{
     main section.complex{
         width: 90%;
         margin: auto;
+        padding-top: 4rem;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 4rem;
     }
+    main section.example-pages{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: repeat(1,1fr);
+    }
+    main section.github-manager{
+        width: 90%;
+        margin: auto;
+    }
+    main section.github-description{
+        width: 90%;
+        margin: auto;
+    }
+    main section.starter-kit{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        gap: 10px;
+    }
+    footer section.footer-manager{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        margin: auto;
+    }
+    footer section.footer-right{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+    footer section.copyright{
+        width: 90%;
+        margin: auto;
+    }
+    main div.hide-btn{
+        display: none;
+    }
+    main section.github section.github-items{
+        position: relative;
+        width: 80%;
+        top: -150px;
+        margin: auto;
+    }
+}
+@media screen and (min-width:470px) {
+    div#container header{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    header section.information{
+        display: none;
+    }
+    header section.information-mobile{
+        width: 50px;
+    }
+    main section.slider{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: start;
+    }
+    main section.slider section.slider-img{
+        width: 100vw;
+        height: 40vh;
+        background: url("images/ill_header_3.png") no-repeat;
+        background-size: 100%;
+    }
+    main section.slider-manager{
+        width: 90%;
+        margin: auto;
+        padding: 2rem 0;
+    }
+    main section.about-us{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 1rem;
+    }
+    main section.css-items{
+        width: 90%;
+        margin: auto;
+        padding-top: 4rem;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 4rem;
+    }
+    main section.javascript-items{
+        width: 90%;
+        margin: auto;
+        padding-top: 4rem;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 4rem;
+    }
+    main section.complex{
+        width: 90%;
+        margin: auto;
+        padding-top: 4rem;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 4rem;
+    }
+    main section.example-pages{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: repeat(1,1fr);
+    }
+    main section.github-manager{
+        width: 90%;
+        margin: auto;
+    }
+    main section.github-description{
+        width: 90%;
+        margin: auto;
+        padding: 2rem 0;
+    }
+    main section.starter-kit{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        gap: 10px;
+    }
+    footer section.footer-manager{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        margin: auto;
+    }
+    footer section.footer-right{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+    footer section.copyright{
+        width: 90%;
+        margin: auto;
+    }
+    main div.hide-btn{
+        display: none;
+    }
+    main section.github section.github-items{
+        position: relative;
+        top: -200px;
+        width: 80%;
+        margin: auto;
+    }
+    main section.starter-kit{
+        position: relative;
+        bottom: -200px;
+    }
+}
+@media screen and (min-width:560px) {
+    main section.starter-kit div.hide{
+        display: none;
+    }
+    main div.hide-btn{
+        display: flex;
+        justify-content: center;
+    }
+    main section.about-us section.img-description{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media screen and (min-width:760px) {
+    main section.slider{
+
+        display: flex;
+    }
+    main section.slider section.slider-img{
+        height: 60vh;
+        order: 1;
+    }
+    main section.slider-manager{
+        padding: 2rem 2rem;
+    }
+    main section.main-manager section.about-us{
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: 1.5fr 2fr;
+        column-gap: 20px;
+    }
+    main section.main-manager section.about-us section.about-us-items{
+        display: flex;
+        gap: 20px;
+    }
+    main section.about-us section.img-description{
+        width: 100%;
+    }
+    main section.css-items{
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: 1.5fr 1fr;
+        column-gap: 20px;
+    }
+    main section.javascript-items{
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: 1.5fr 2fr;
+        gap: 20px;
+    }
+    main section.javascript-items section.javascript-content{
+        padding: 1rem 0;
+    }
+    main section.complex{
+        padding-top: 4rem;
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    main section.github-description{
+        width: 80%;
+        padding: 0;
+    }
+    footer section.footer-manager{
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 20px;
+        padding-bottom: 1rem;
+    }
+    footer section.footer-right{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 0;
+        padding: 2rem 0;
+    }
+}
+@media screen and (min-width:960px) {
+    header section.information{
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: auto auto auto;
+        white-space: nowrap;
+    }
+    div#container header{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+    header section.information div.header-box1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: 1px dashed #000;
+        border-radius: 5px;
+    }
+    header section.information div.header-box2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    header div.btn-header{
+        background-color: red;
+        padding: 0.5rem;
+        border-radius: 5px;
+        color: white;
+    }
+    header section.information-mobile{
+        display: none;
+    }
+    header section.information img{
+        width: 7%;
+        height: 20%;
+    }
+    main section.javascript-items{
+        grid-template-columns: 2fr 1.5fr;
+    }
+    main section.javascript-boxes{
+        display: flex;
+        gap: 10px;
+    }
+    main section.github-manager{
+        display: flex;
+        gap: 20px;
+    }
+    main section.github-manager div.github-title{
+        color: rgb(40, 40, 40);
+        text-shadow: 0 0 0 gray;
+    }
+}
+@media screen and (min-width:1200px) {
+    
 }
